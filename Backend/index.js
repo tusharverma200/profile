@@ -30,7 +30,10 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 app.listen(port, () => {
+    console.log("Server is running....")
     console.log(`Server running on port ${port}`);
     //  console.log(__dirname);
 
 });
+
+
