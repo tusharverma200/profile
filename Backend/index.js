@@ -18,6 +18,10 @@ app.use('/api', profileRoutes);
 // Error Handling Middleware
 app.use(errorHandler);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
