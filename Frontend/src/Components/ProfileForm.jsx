@@ -32,7 +32,7 @@ const ProfileForm = () => {
 
         try {
             console.log(profile);
-            const user = await axios.post('http://localhost:3000/api/profiles', formData, {
+            const user = await axios.post('https://profile-8wmd.vercel.app/api/profiles', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
